@@ -104,38 +104,38 @@ h1.page__title {
 
 /* Sidebar text */
 .author__bio {
-  font-size: 18px !important;
+  font-size: 22px !important;
 }
 
 .author__urls a {
-  font-size: 18px !important;
+  font-size: 22px !important;
 }
 
 /* Keep headers at reasonable size */
 .page__content h1 {
-  font-size: 2.0em !important; /* Reduced from ~2.5em */
+  font-size: 2.5em !important; /* Reduced from ~2.5em */
 }
 
 .page__content h2 {
-  font-size: 1.6em !important; /* Reduced from ~1.75em */
+  font-size: 2.0em !important; /* Reduced from ~1.75em */
 }
 
 .page__content h3 {
-  font-size: 1.4em !important;
+  font-size: 1.8em !important;
 }
 
 /* Optional: Also reduce navigation font size if needed */
 .greedy-nav a {
-  font-size: 2.0em !important;
+  font-size: 2.5em !important;
 }
 
 /* Ensure sidebar text stays readable */
 .author__bio {
-  font-size: 1.8em !important;
+  font-size: 2.0em !important;
 }
 
 .author__urls a {
-  font-size: 2.0em !important;
+  font-size: 2.4em !important;
 }
 
 /* Text alignment - justified with even line lengths */
