@@ -79,17 +79,17 @@ main p {
 .page__content h1,
 .page h1,
 h1.page__title {
-  font-size: 26px !important;
+  font-size: 20px !important;
 }
 
 .page__content h2,
 .page h2 {
-  font-size: 22px !important;
+  font-size: 18px !important;
 }
 
 .page__content h3,
 .page h3 {
-  font-size: 20px !important;
+  font-size: 16px !important;
 }
 
 /* Navigation menu */
@@ -99,7 +99,7 @@ h1.page__title {
 
 /* Site title */
 .site-title {
-  font-size: 18px !important;
+  font-size: 16px !important;
 }
 
 /* Sidebar text */
@@ -126,12 +126,12 @@ h1.page__title {
 
 /* Optional: Also reduce navigation font size if needed */
 .greedy-nav a {
-  font-size: 2.5em !important;
+  font-size: 2.1em !important;
 }
 
 /* Ensure sidebar text stays readable */
 .author__bio {
-  font-size: 1.7em !important;
+  font-size: 1.3em !important;
 }
 
 .author__urls a {
