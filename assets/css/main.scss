@@ -44,15 +44,71 @@
   opacity: 1 !important;
 }
 
-/* Fix 2: Reduce font size of main content */
-.page__content {
-  font-size: 0.9em !important; /* Reduced from default 1em */
-  line-height: 1.6 !important;
+/* Fix 2: AGGRESSIVE font size reduction */
+/* Base font size for entire page */
+html {
+  font-size: 14px !important;
 }
 
-/* Adjust paragraph text size specifically */
-.page__content p {
-  font-size: 0.95em !important;
+body {
+  font-size: 14px !important;
+}
+
+/* Main content area */
+.page__content {
+  font-size: 14px !important;
+  line-height: 1.5 !important;
+}
+
+/* All paragraphs */
+.page__content p,
+.page p,
+article p,
+main p {
+  font-size: 14px !important;
+  line-height: 1.5 !important;
+}
+
+/* All list items */
+.page__content li,
+.page li {
+  font-size: 14px !important;
+}
+
+/* Headers - much smaller */
+.page__content h1,
+.page h1,
+h1.page__title {
+  font-size: 24px !important;
+}
+
+.page__content h2,
+.page h2 {
+  font-size: 20px !important;
+}
+
+.page__content h3,
+.page h3 {
+  font-size: 18px !important;
+}
+
+/* Navigation menu */
+.greedy-nav a {
+  font-size: 14px !important;
+}
+
+/* Site title */
+.site-title {
+  font-size: 18px !important;
+}
+
+/* Sidebar text */
+.author__bio {
+  font-size: 13px !important;
+}
+
+.author__urls a {
+  font-size: 13px !important;
 }
 
 /* Keep headers at reasonable size */
