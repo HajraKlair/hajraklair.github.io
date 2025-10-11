@@ -1,51 +1,28 @@
----
----
-
 @charset "utf-8";
 @import "minimal-mistakes";
 
-/* Fix 1: Remove greyed-out sidebar effect - make it always fully visible */
-.sidebar {
-  opacity: 1 !important;
-}
-
-.author__avatar {
-  opacity: 1 !important;
-}
-
-.author__avatar img {
-  opacity: 1 !important;
-}
-
-.author__content {
-  opacity: 1 !important;
-}
-
-.author__name {
-  opacity: 1 !important;
-}
-
-.author__bio {
-  opacity: 1 !important;
-}
-
-.author__urls {
-  opacity: 1 !important;
-}
-
+/* ==================================
+   Fix 1: Remove greyed-out sidebar effect
+   ================================== */
+.sidebar,
+.sidebar:hover,
+.author__avatar,
+.author__avatar:hover,
+.author__avatar img,
+.author__content,
+.author__content:hover,
+.author__name,
+.author__bio,
+.author__urls,
 .author__urls-wrapper {
   opacity: 1 !important;
 }
 
-/* Remove ALL hover opacity changes */
-.sidebar:hover,
-.author__avatar:hover,
-.author__content:hover {
-  opacity: 1 !important;
-}
+/* ==================================
+   Fix 2: Font Size Adjustments
+   ================================== */
 
-/* Fix 2: AGGRESSIVE font size reduction */
-/* Base font size for entire page */
+/* Base font sizes */
 html {
   font-size: 18px !important;
 }
@@ -54,13 +31,12 @@ body {
   font-size: 16px !important;
 }
 
-/* Main content area */
+/* Main content typography */
 .page__content {
   font-size: 16px !important;
   line-height: 1.7 !important;
 }
 
-/* All paragraphs */
 .page__content p,
 .page p,
 article p,
@@ -69,32 +45,31 @@ main p {
   line-height: 1.7 !important;
 }
 
-/* All list items */
 .page__content li,
 .page li {
   font-size: 16px !important;
 }
 
-/* Headers - much smaller */
+/* Headers */
 .page__content h1,
 .page h1,
 h1.page__title {
-  font-size: 20px !important;
+  font-size: 2.5em !important;
 }
 
 .page__content h2,
 .page h2 {
-  font-size: 18px !important;
+  font-size: 2.0em !important;
 }
 
 .page__content h3,
 .page h3 {
-  font-size: 16px !important;
+  font-size: 1.8em !important;
 }
 
-/* Navigation menu */
+/* Navigation */
 .greedy-nav a {
-  font-size: 16px !important;
+  font-size: 2.1em !important;
 }
 
 /* Site title */
@@ -102,34 +77,7 @@ h1.page__title {
   font-size: 16px !important;
 }
 
-/* Sidebar text */
-.author__bio {
-  font-size: 18px !important;
-}
-
-.author__urls a {
-  font-size: 20px !important;
-}
-
-/* Keep headers at reasonable size */
-.page__content h1 {
-  font-size: 2.5em !important; /* Reduced from ~2.5em */
-}
-
-.page__content h2 {
-  font-size: 2.0em !important; /* Reduced from ~1.75em */
-}
-
-.page__content h3 {
-  font-size: 1.8em !important;
-}
-
-/* Optional: Also reduce navigation font size if needed */
-.greedy-nav a {
-  font-size: 2.1em !important;
-}
-
-/* Ensure sidebar text stays readable */
+/* Sidebar specific text */
 .author__bio {
   font-size: 1.3em !important;
 }
@@ -138,8 +86,13 @@ h1.page__title {
   font-size: 2.1em !important;
 }
 
-/* Text alignment - justified with even line lengths */
-.page__content {
+/* ==================================
+   Text Alignment - Justified
+   ================================== */
+.page__content,
+.page__inner-wrap,
+article.page,
+#main {
   text-align: justify !important;
   text-justify: inter-word !important;
 }
@@ -147,20 +100,10 @@ h1.page__title {
 .page__content p,
 .page p,
 article p,
-main p {
-  text-align: justify !important;
-  text-justify: inter-word !important;
-  hyphens: auto !important;
-}
-
+main p,
 .page__content li,
 .page li {
   text-align: justify !important;
   text-justify: inter-word !important;
-}
-
-.page__inner-wrap,
-article.page,
-#main {
-  text-align: justify !important;
+  hyphens: auto !important;
 }
