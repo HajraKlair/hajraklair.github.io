@@ -137,3 +137,30 @@ h1.page__title {
 .author__urls a {
   font-size: 1.05em !important;
 }
+
+/* Text alignment - justified with even line lengths */
+.page__content {
+  text-align: justify !important;
+  text-justify: inter-word !important;
+}
+
+.page__content p,
+.page p,
+article p,
+main p {
+  text-align: justify !important;
+  text-justify: inter-word !important;
+  hyphens: auto !important;
+}
+
+.page__content li,
+.page li {
+  text-align: justify !important;
+  text-justify: inter-word !important;
+}
+
+.page__inner-wrap,
+article.page,
+#main {
+  text-align: justify !important;
+}
