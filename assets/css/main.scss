@@ -1,0 +1,83 @@
+---
+---
+
+@charset "utf-8";
+@import "minimal-mistakes";
+
+/* Fix 1: Remove greyed-out sidebar effect - make it always fully visible */
+.sidebar {
+  opacity: 1 !important;
+}
+
+.author__avatar {
+  opacity: 1 !important;
+}
+
+.author__avatar img {
+  opacity: 1 !important;
+}
+
+.author__content {
+  opacity: 1 !important;
+}
+
+.author__name {
+  opacity: 1 !important;
+}
+
+.author__bio {
+  opacity: 1 !important;
+}
+
+.author__urls {
+  opacity: 1 !important;
+}
+
+.author__urls-wrapper {
+  opacity: 1 !important;
+}
+
+/* Remove ALL hover opacity changes */
+.sidebar:hover,
+.author__avatar:hover,
+.author__content:hover {
+  opacity: 1 !important;
+}
+
+/* Fix 2: Reduce font size of main content */
+.page__content {
+  font-size: 0.9em !important; /* Reduced from default 1em */
+  line-height: 1.6 !important;
+}
+
+/* Adjust paragraph text size specifically */
+.page__content p {
+  font-size: 0.95em !important;
+}
+
+/* Keep headers at reasonable size */
+.page__content h1 {
+  font-size: 1.8em !important; /* Reduced from ~2.5em */
+}
+
+.page__content h2 {
+  font-size: 1.4em !important; /* Reduced from ~1.75em */
+}
+
+.page__content h3 {
+  font-size: 1.2em !important;
+}
+
+/* Optional: Also reduce navigation font size if needed */
+.greedy-nav a {
+  font-size: 0.9em !important;
+}
+
+/* Ensure sidebar text stays readable */
+.author__bio {
+  font-size: 0.9em !important;
+}
+
+.author__urls a {
+  font-size: 0.85em !important;
+}
